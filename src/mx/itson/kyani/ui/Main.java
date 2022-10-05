@@ -37,6 +37,7 @@ public class Main {
             alumno1.setCalificacion(10);
             alumno1.setAsistencias(56);
             alumnos.add(alumno1);
+            //Hola
             
             Alumno alumno2 = new Alumno();
             alumno2.setNombre("Carlos Alberto Gaxiola Arias     ");
