@@ -32,7 +32,8 @@ public class Main {
             List<Alumno> alumnos = new ArrayList<>();
             
             Alumno alumno1 = new Alumno();
-            alumno1.setNombre("Edgar Fabian Hernández Valenzuela");
+            //alumno1.setNombre("Edgar Fabian Hernández Valenzuela");
+            alumno1.setNombre(String.format("%-44s" , "Edgar Fabian Hernández Valenzuela"));
             alumno1.setId(180974);
             alumno1.setCalificacion(10);
             alumno1.setAsistencias(56);
@@ -40,29 +41,29 @@ public class Main {
             //H
             
             Alumno alumno2 = new Alumno();
-            alumno2.setNombre("Carlos Alberto Gaxiola Arias     ");
-            alumno2.setId(180975);
+            alumno2.setNombre(String.format("%-44s" , "Carlos Alberto Gaxiola Arias"));
+            alumno2.setId(181245);
             alumno2.setCalificacion(10);
             alumno2.setAsistencias(56);
             alumnos.add(alumno2);
             
             Alumno alumno3 = new Alumno();
-            alumno3.setNombre("Brandon Campa Valle               ");
-            alumno3.setId(180976);
+            alumno3.setNombre(String.format("%-44s" , "Brandon Campa Valle"));
+            alumno3.setId(182303);
             alumno3.setCalificacion(8);
             alumno3.setAsistencias(50);
             alumnos.add(alumno3);
             
             Alumno alumno4 = new Alumno();
-            alumno4.setNombre("Mario Alexis Manrriquez Dueñas    ");
-            alumno4.setId(180977);
+            alumno4.setNombre(String.format("%-44s" , "Mario Alexis Manrriquez Dueñas"));
+            alumno4.setId(181155);
             alumno4.setCalificacion(9);
             alumno4.setAsistencias(54);
             alumnos.add(alumno4);
             
             Alumno alumno5 = new Alumno();
-            alumno5.setNombre("Issac Mauricio Pacheco Garcia    ");
-            alumno5.setId(180978);
+            alumno5.setNombre(String.format("%-44s" , "Issac Mauricio Pacheco Garcia"));
+            alumno5.setId(181019);
             alumno5.setCalificacion(10);
             alumno5.setAsistencias(55);
             alumnos.add(alumno5);
@@ -97,12 +98,12 @@ public class Main {
         System.out.println("Maestro: " + grupo.getNombreMaestro());
         System.out.println("Ciclo escolar: " + grupo.getCiclo() + "       Grupo: " + grupo.getGrupo() + "       Grado: " + grupo.getGrado() + "er semestre" 
             + "        Número de Alumnos: " + grupo.getNumeroAlumnos());
-        System.out.println("Nombre                                      Calificacion            ID                 Asistencias");
+        System.out.println("Nombre del Alumno                           Calificacion         No. ID                Asistencias");
         
         for(Alumno a : grupo.getAlumnos()){
             
-            System.out.println(a.getNombre() + "                     " + a.getCalificacion() + "            " + a.getId()
-            + "                      " + a.getAsistencias());
+            System.out.println(a.getNombre() + "          " + String.format("%2d" , a.getCalificacion()) + "         00000" + a.getId()
+            + "                    " + a.getAsistencias());
             
         }
         
