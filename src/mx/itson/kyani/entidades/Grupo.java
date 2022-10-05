@@ -22,7 +22,6 @@ public class Grupo {
     private int numeroAlumnos;
     private List<Alumno> alumnos;
     private Aprobado aprobado;
-    
 
     public String getGrupo() {
         return grupo;
@@ -56,13 +55,13 @@ public class Grupo {
         this.numeroAlumnos = numeroAlumnos;
     }
 
-    public List<Alumno> getAlumnos() {
+    /*public List<Alumno> getAlumnos() {
         return alumnos;
     }
 
     public void setAlumnos(List<Alumno> alumnos) {
         this.alumnos = alumnos;
-    }
+    }*/
 
     public Aprobado getAprobado() {
         return aprobado;
@@ -86,6 +85,14 @@ public class Grupo {
 
     public void setCiclo(String ciclo) {
         this.ciclo = ciclo;
+    }
+
+    public List<Alumno> getAlumnos() {
+        return alumnos;
+    }
+
+    public void setAlumnos(List<Alumno> alumnos) {
+        this.alumnos = alumnos;
     }
     
 }
