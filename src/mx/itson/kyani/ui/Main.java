@@ -16,16 +16,6 @@ import mx.itson.kyani.enumeradores.Aprobado;
  * @author shiri
  */
 public class Main {
-    
-    public static final String ANSI_BLACK = "\u001B[30m";
-    public static final String ANSI_RED = "\u001B[31m";
-    public static final String ANSI_GREEN = "\u001B[32m";
-    public static final String ANSI_YELLOW = "\u001B[33m";
-    public static final String ANSI_BLUE = "\u001B[34m";
-    public static final String ANSI_PURPLE = "\u001B[35m";
-    public static final String ANSI_CYAN = "\u001B[36m";
-    public static final String ANSI_WHITE = "\u001B[37m";
-    public static final String ANSI_RESET = "\u001B[0m";
 
     /**
      * @param args the command line arguments
@@ -104,20 +94,20 @@ public class Main {
         System.out.println("Escuela de Japonés \"Shirigami\"");
         System.out.println("--------------------------------------------------------------------------------------------------");
         System.out.println("Maestro: " + grupo.getNombreMaestro());
-        System.out.println("    Ciclo escolar: " + grupo.getCiclo() + "      Grupo: " + grupo.getGrupo() + "      Grado: " + grupo.getGrado() + "er semestre" 
-            + "      Número de Alumnos: " + grupo.getNumeroAlumnos());
+        System.out.println("Ciclo escolar: " + grupo.getCiclo() + "       Grupo: " + grupo.getGrupo() + "       Grado: " + grupo.getGrado() + "er semestre" 
+            + "        Número de Alumnos: " + grupo.getNumeroAlumnos());
         System.out.println("Nombre                                      Calificacion            ID                 Asistencias");
         
         for(Alumno a : grupo.getAlumnos()){
             
-            System.out.println(a.getNombre() + "                     " + ANSI_GREEN + a.getCalificacion() + ANSI_RESET + "            " + a.getId()
+            System.out.println(a.getNombre() + "                     " + a.getCalificacion() + "            " + a.getId()
             + "                      " + a.getAsistencias());
             
         }
         
         System.out.println("");
-        System.out.println("                                                                     El promedio grupal es de: " + ANSI_GREEN + grupo.getPromedio() + ANSI_RESET);
-        System.out.println("                                                                           El grupo está: " + ANSI_GREEN + grupo.getAprobado() + ANSI_RESET);
+        System.out.println("                                                                     El promedio grupal es de: " + grupo.getPromedio());
+        System.out.println("                                                                           El grupo está: " + grupo.getAprobado());
         
     }
     
